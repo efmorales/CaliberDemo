@@ -12,7 +12,6 @@ const WorkoutScreen = () => {
         <ExerciseDetail />
         <VideoLoop />
         <MenuBar />
-        <Text>Workout Screen Placeholder eventually just holds the macro styling</Text>
     </View>
   );
 };
@@ -22,6 +21,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor:'#F2F3F5',
   },
 });
 
