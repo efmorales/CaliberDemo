@@ -4,7 +4,7 @@ import { View, Text } from 'react-native';
 const MenuBar = () => {
   return (
     <View>
-      <Text>MenuBar Placeholder</Text>
+      <Text>MenuBar Placeholder goes to the bottom</Text>
     </View>
   );
 };

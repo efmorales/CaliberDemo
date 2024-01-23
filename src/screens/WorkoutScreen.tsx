@@ -12,7 +12,7 @@ const WorkoutScreen = () => {
         <ExerciseDetail />
         <VideoLoop />
         <MenuBar />
-        <Text>Workout Screen Placeholder</Text>
+        <Text>Workout Screen Placeholder eventually just holds the macro styling</Text>
     </View>
   );
 };

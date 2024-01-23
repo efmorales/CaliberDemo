@@ -4,7 +4,7 @@ import { View, Text } from 'react-native';
 const ExerciseDetail = () => {
   return (
     <View>
-      <Text>ExerciseDetail Placeholder</Text>
+      <Text>Dumbbell Floor Press</Text>
     </View>
   );
 };
