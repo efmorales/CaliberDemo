@@ -18,11 +18,11 @@ const Header = () => {
 const styles = StyleSheet.create({
     header: {
       width: Dimensions.get('window').width,
-      // the header stays on top of the screen
+      // the header stays on top of the screen, 
       position: 'absolute',
       top: 0,
       left: 0,
-      height: 4 * 16, // Assuming 1 rem = 16px
+      height: 6.5 * 16, // Assuming 1 rem = 16px
       backgroundColor: '#1D143F',
       alignItems: 'center',
       justifyContent: 'center',
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
       textAlign: 'center',
       color: '#FFFFFF',
       fontFamily: 'OpenSans-Regular', // Make sure you have this font loaded
-      fontSize: 16, // Adjust the size as needed
+      fontSize: 20, // Adjust the size as needed
     },
     button: {
       width: 40, // Adjust size as needed

@@ -27,18 +27,19 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 0,
     flexDirection: 'row',
-    justifyContent: 'space-around',
+    justifyContent: 'space-evenly',
     alignItems: 'center',
     backgroundColor: '#FFF',
-    height: 60, // Adjust as needed
+    height: 5 * 16, // rem size
   },
   button: {
     alignItems: 'center',
+    paddingVertical: 10,
     // marginHorizontal: 16, // Adjust as needed
   },
   label: {
     fontFamily: 'OpenSans-Regular', // Make sure you have this font loaded
-    fontSize: 8, // Adjust the size as needed
+    fontSize: 12, // Adjust the size as needed
   },
 });
 
