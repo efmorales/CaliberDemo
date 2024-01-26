@@ -88,8 +88,6 @@ const ExerciseDetail: React.FC<ExerciseDetailProps> = ({ style }) => {
 
 const styles = StyleSheet.create({
   container: {
-    // the component is positioned to the right of the screen,
-    // and it takes up 30% of the screen width
     position: 'absolute',
     right: 20,
     width: '30%',
@@ -178,7 +176,6 @@ const styles = StyleSheet.create({
 
   setsSection: {
     flexDirection: 'column',
-    // Add your sets section styles here
   },
 
   set: {

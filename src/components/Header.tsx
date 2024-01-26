@@ -18,9 +18,6 @@ const Header = () => {
 const styles = StyleSheet.create({
     header: {
       width: Dimensions.get('window').width,
-      // position: 'absolute',
-      // top: 0,
-      // left: 0,
       height: 6.5 * 16, // Assuming 1 rem = 16px
       backgroundColor: '#1D143F',
       alignItems: 'center',

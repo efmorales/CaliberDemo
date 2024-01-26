@@ -24,8 +24,6 @@ const renderIcon = (name: string, label: string) => (
 const styles = StyleSheet.create({
   container: {
     width: Dimensions.get('window').width,
-    // position: 'absolute',
-    // bottom: 0,
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     alignItems: 'center',
