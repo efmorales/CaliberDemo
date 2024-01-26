@@ -9,8 +9,10 @@ const WorkoutScreen = () => {
   return (
     <View style={styles.container}>
         <Header />
-        <ExerciseDetail />
-        <VideoLoop />
+      <View style={styles.content}>
+        <VideoLoop style={styles.videoLoop} />
+        <ExerciseDetail style={styles.exerciseDetail} />
+      </View>
         <MenuBar />
     </View>
   );
@@ -19,9 +21,21 @@ const WorkoutScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor:'#F2F3F5',
+    justifyContent: 'space-between', // Distributes space between header, content, and menu bar
+    // backgroundColor: '#F2F3F5',
+  },
+  content: {
+    flex: 1,
+    flexDirection: 'row', // Aligns VideoLoop and ExerciseDetail side by side
+    backgroundColor: '#F2F3F5',
+  },
+  videoLoop: {
+    flex: 2, // Takes up 2/3 of the space
+    
+  },
+  exerciseDetail: {
+    flex: 1, // Takes up 1/3 of the space
+
   },
 });
 

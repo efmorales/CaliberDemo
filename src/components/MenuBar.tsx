@@ -24,8 +24,8 @@ const renderIcon = (name: string, label: string) => (
 const styles = StyleSheet.create({
   container: {
     width: Dimensions.get('window').width,
-    position: 'absolute',
-    bottom: 0,
+    // position: 'absolute',
+    // bottom: 0,
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     alignItems: 'center',
@@ -35,11 +35,10 @@ const styles = StyleSheet.create({
   button: {
     alignItems: 'center',
     paddingVertical: 10,
-    // marginHorizontal: 16, // Adjust as needed
   },
   label: {
-    fontFamily: 'OpenSans-Regular', // Make sure you have this font loaded
-    fontSize: 12, // Adjust the size as needed
+    fontFamily: 'OpenSans-Regular',
+    fontSize: 12,
   },
 });
 

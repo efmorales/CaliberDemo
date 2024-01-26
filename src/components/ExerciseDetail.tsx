@@ -1,8 +1,12 @@
 import React from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, ViewStyle } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 
-const ExerciseDetail = () => {
+interface ExerciseDetailProps {
+  style?: ViewStyle;
+}
+
+const ExerciseDetail: React.FC<ExerciseDetailProps> = ({ style }) => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -87,17 +91,13 @@ const styles = StyleSheet.create({
     // the component is positioned to the right of the screen,
     // and it takes up 30% of the screen width
     position: 'absolute',
-    top: 6.5 * 16, // Assuming 1 rem = 16px
-    right: 0,
+    right: 20,
     width: '30%',
-    height: '100%',
     backgroundColor: '#F2F3F5',
-    padding: 16,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 2,
-    elevation: 2,
+    paddingTop: 16,
+    overflow: 'scroll',
+    justifyContent: 'center',
+
   },
 
   header: {
@@ -106,6 +106,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#FFF',
     padding: 16,
+    borderRadius: 10,
   },
 
   title: {
@@ -184,9 +185,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginTop: 16,
+    marginTop: 0.5 * 16,
     backgroundColor: '#FFF',
     padding: 16,
+    borderRadius: 10,
   },
 
   setTitle: {
@@ -239,6 +241,7 @@ const styles = StyleSheet.create({
     marginTop: 16,
     padding: 16,
     backgroundColor: '#FFF',
+    borderRadius: 10,
   },
 
   addButtonText: {
@@ -254,6 +257,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 16,
     marginTop: 16,
+    borderRadius: 10,
   },
 
   completeButtonText: {
