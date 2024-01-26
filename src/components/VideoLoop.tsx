@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
   video: {
     height: '65%',
     width: '65%',
+    borderRadius: 10,
   },
 });
 

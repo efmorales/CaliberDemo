@@ -1,6 +1,8 @@
-# Caliber Widescreen Demo
+# Caliber Landscape view Demo
 
 This is a React Native project that includes video playback and exercise details, designed for a landscape view for either iPad or iPhone.
+
+The objective of this project is to show how the landscape view can benefit the users with a clearer and bigger view of the selected exercise, a feature I wish I personally would love to see added to the app.
 
 ## Getting Started
 
@@ -9,8 +11,9 @@ Follow these instructions to get the project up and running on your local machin
 ### Prerequisites
 
 - Node.js and npm/yarn installed on your machine.
-- React Native CLI installed globally.
-- Android Studio/Xcode installed for Android/iOS development respectively.
+- React Native CLI installed with npx or globally.
+- Xcode installed for iOS development.
+- Simulators for iPhone and iPad installed within Xcode.
 
 ### Installation
 
@@ -24,20 +27,26 @@ git clone https://github.com/efmorales/CaliberDemo.git
 cd CaliberDemo
 ```
 
-3. Install the dependencies:
+3. Install the big library dependencies:
 ```bash
 npm install
 # OR
 yarn install
 ```
-4. Run the Metro Bundler:
+4. Install iOS (Pods) dependencies:
+```bash
+cd ios
+pods install
+```
+
+5. Run the Metro Bundler:
 
 ```bash
 npm start
 # OR
 yarn start
 ```
-5. In a new terminal, run the app on iOS:
+6. In a new terminal, run the app on iOS:
 
 ```bash
 npx react-native run-ios --simulator="iPad Air (5th generation)"
@@ -49,6 +58,8 @@ npx react-native run-ios --simulator="iPad Air (5th generation)"
 This project includes two main components: `VideoLoop` and `ExerciseDetail`.
 
 `VideoLoop` is responsible for playing a video from the local assets. `ExerciseDetail` displays the details of an exercise.
+
+The objective is to show how the landscape view can benefit an appropiate visibility of the selected exercise.
 
 ## Troubleshooting
 
