@@ -2,7 +2,7 @@
 
 This is a React Native project that includes video playback and exercise details, designed for a landscape view for either iPad or iPhone.
 
-The objective of this project is to show how the landscape view can benefit the users with a clearer and bigger view of the selected exercise, a feature I wish I personally would love to see added to the app.
+The objective of this project is to show how the landscape view can benefit the users with a clearer and bigger view of the selected exercise, a feature I would love to see added to the app.
 
 ## Getting Started
 
